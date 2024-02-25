@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shapes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="hero">
+        <div class="hero__text">
+            CSS Backgrounds
+        </div>
+        <div class="hero__background-1"></div>
+        <div class="hero__background-2"></div>
+        <div class="hero__background-3"></div>
+    </div>
+
+
+
+    <main class="main">
+        
+        <!-- ctrl + k + c  -->
+        <div id="horizontalLines" class="background-wrap">
+            <h3 class="background-title">Horizontal lines</h3>
+            <style contenteditable="">
+#horizontalLines {
+background-size: 20px 20px;
+background-image:  repeating-linear-gradient(0deg, #444cf7, #444cf7 1px, #e5e5f7 1px, #e5e5f7);
+}
+            </style>
+        </div>
+        <!-- shift + alt + a -->
+
+        <!-- ctrl + k + c  -->
+        <div id="thickHorizontalLines" class="background-wrap">
+            <h3 class="background-title">Thick Horizontal lines</h3>
+            <style contenteditable="">
+#thickHorizontalLines {
+background-size: 20px 20px;
+background-image: linear-gradient(0deg, #e5e5f7 50%, #444cf7 50%);
+}
+            </style>
+        </div>
+        <!-- shift + alt + a -->
+
+
+        <!-- ctrl + k + c  -->
+        <div id="verticalLines" class="background-wrap">
+            <h3 class="background-title">Vertical lines</h3>
+            <style contenteditable="">
+#verticalLines {
+background-size: 20px 20px;
+background-image:  repeating-linear-gradient(to right, #444cf7, #444cf7 1px, #e5e5f7 1px, #e5e5f7);
+}
+            </style>
+        </div>
+        <!-- shift + alt + a -->
+
+        <!-- ctrl + k + c  -->
+        <div id="thickVerticalLines" class="background-wrap">
+            <h3 class="background-title">Thick Vertical lines</h3>
+            <style contenteditable="">
+#thickVerticalLines {
+background-image: linear-gradient(to right, #444cf7, #444cf7 5px, #e5e5f7 5px, #e5e5f7 );
+background-size: 20px;
+}
+            </style>
+        </div>
+        <!-- shift + alt + a -->
+
+
+        <!-- ctrl + k + c  -->
+        <div id="diagonalLines" class="background-wrap">
+            <h3 class="background-title">Diagonal Lines (top left to bottom right)</h3>
+            <style contenteditable="">
+#diagonalLines {
+background-size: 20px 20px;
+background-image: repeating-linear-gradient(45deg, #444cf7 0, #444cf7 1px, #e5e5f7 0, #e5e5f7 50%);
+}
+            </style>
+        </div>
+        <!-- shift + alt + a -->
+
+        <!-- ctrl + k + c  -->
+        <div id="diagonalLines2" class="background-wrap">
+            <h3 class="background-title">Diagonal Lines (top right to bottom left)</h3>
+            <style contenteditable="">
+#diagonalLines2 {
+background-size: 20px 20px;
+background-image: repeating-linear-gradient(-45deg, #444cf7 0, #444cf7 1px, #e5e5f7 0, #e5e5f7 50%);
+}
+            </style>
+        </div>
+        <!-- shift + alt + a -->
+
+        <!-- ctrl + k + c  -->
+        <div id="thickDiagonalLines" class="background-wrap">
+            <h3 class="background-title">Thick  Diagonal Lines (top left to bottom right)</h3>
+            <style contenteditable="">
+#thickDiagonalLines {
+background: repeating-linear-gradient( 45deg, #444cf7, #444cf7 5px, #e5e5f7 5px, #e5e5f7 25px );
+}
+            </style>
+        </div>
+        <!-- shift + alt + a -->
+
+
+        <!-- ctrl + k + c  -->
+        <div id="thickdiagonalLines2" class="background-wrap">
+            <h3 class="background-title">Thick  Diagonal Lines  (top right to bottom left)</h3>
+            <style contenteditable="">
+#thickdiagonalLines2 {
+background: repeating-linear-gradient( -45deg, #444cf7, #444cf7 5px, #e5e5f7 5px, #e5e5f7 25px );
+}
+            </style>
+        </div>
+        <!-- shift + alt + a -->
+
+
+        <!-- ctrl + k + c  -->
+        <div id="boxes" class="background-wrap">
+            <h3 class="background-title">Boxes</h3>
+            <style contenteditable="">
+#boxes {
+background-color: #e5e5f7;
+opacity: 1;
+background-image:  linear-gradient(#444cf7 1px, transparent 1px), linear-gradient(to right, #444cf7 1px, #e5e5f7 1px);
+background-size: 20px 20px;
+}
+            </style>
+        </div>
+        <!-- shift + alt + a -->
+
+        <!-- ctrl + k + c  -->
+        <div id="chessPattern" class="background-wrap">
+            <h3 class="background-title">Chess Pattern</h3>
+            <style contenteditable="">
+#chessPattern {
+background-image:  repeating-linear-gradient(45deg, #444cf7 25%, transparent 25%, transparent 75%, #444cf7 75%, #444cf7), repeating-linear-gradient(45deg, #444cf7 25%, #e5e5f7 25%, #e5e5f7 75%, #444cf7 75%, #444cf7);
+background-position: 0 0, 10px 10px;
+background-size: 20px 20px;
+}
+            </style>
+        </div>
+        <!-- shift + alt + a -->
+
+        <!-- ctrl + k + c  -->
+        <div id="crossPattern" class="background-wrap">
+            <h3 class="background-title">Cross Pattern</h3>
+            <style contenteditable="">
+#crossPattern {
+background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#444cf7 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #444cf7 2px, #e5e5f7 2px) -1px 0;
+background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+}
+            </style>
+        </div>
+        <!-- shift + alt + a -->
+
+        <!-- ctrl + k + c  -->
+        <div id="triangles" class="background-wrap">
+            <h3 class="background-title">Triangles (left bottom)</h3>
+            <style contenteditable="">
+#triangles {
+background-image: linear-gradient(45deg, #444cf7 50%, #e5e5f7 50%);
+background-size: 20px 20px;
+}
+            </style>
+        </div>
+        <!-- shift + alt + a -->
+
+
+        <!-- ctrl + k + c  -->
+        <div id="triangles2" class="background-wrap">
+            <h3 class="background-title">Triangles (left top)</h3>
+            <style contenteditable="">
+#triangles2 {
+background-image: linear-gradient(-45deg, #e5e5f7 50%, #444cf7 50%);
+background-size: 20px 20px;
+}
+            </style>
+        </div>
+        <!-- shift + alt + a -->
+
+        <!-- ctrl + k + c  -->
+        <div id="triangles3" class="background-wrap">
+            <h3 class="background-title">Triangles (right top)</h3>
+            <style contenteditable="">
+#triangles3 {
+background-image: linear-gradient(45deg, #e5e5f7 50%, #444cf7 50%);
+background-size: 20px 20px;
+}
+            </style>
+        </div>
+        <!-- shift + alt + a -->
+
+        <!-- ctrl + k + c  -->
+        <div id="triangles4" class="background-wrap">
+            <h3 class="background-title">Triangles (right bottom)</h3>
+            <style contenteditable="">
+#triangles4 {
+background-image: linear-gradient(-45deg, #444cf7 50%, #e5e5f7 50%);
+background-size: 20px 20px;
+}
+            </style>
+        </div>
+        <!-- shift + alt + a -->
+
+
+        <!-- ctrl + k + c  -->
+        <div id="polkaDotPattern" class="background-wrap">
+            <h3 class="background-title">Polka Dot Pattern</h3>
+            <style contenteditable="">
+#polkaDotPattern {
+background-image: radial-gradient(#444cf7 1px, #e5e5f7 1px);
+background-size: 20px 20px;
+}
+            </style>
+        </div>
+        <!-- shift + alt + a -->
+
+
+
+        <!-- ctrl + k + c  -->
+        <div id="polkaDotPattern2" class="background-wrap">
+            <h3 class="background-title">Polka Dot Pattern 2</h3>
+            <style contenteditable="">
+#polkaDotPattern2 {
+background-image:  radial-gradient(#444cf7 1px, transparent 1px), radial-gradient(#444cf7 1px, #e5e5f7 1px);
+background-size: 20px 20px;
+background-position: 0 0,10px 10px;
+}
+            </style>
+        </div>
+        <!-- shift + alt + a -->
+
+
+
+        <!-- ctrl + k + c  -->
+        <div id="mathbookSquares" class="background-wrap">
+            <h3 class="background-title">Mathbook Squares</h3>
+            <style contenteditable="">
+#mathbookSquares {
+background-image:  linear-gradient(#444cf7 2px, transparent 2px), linear-gradient(90deg, #444cf7 2px, transparent 2px), linear-gradient(#444cf7 1px, transparent 1px), linear-gradient(90deg, #444cf7 1px, #e5e5f7 1px);
+background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+            </style>
+        </div>
+        <!-- shift + alt + a -->
+
+
+
+        <!-- ctrl + k + c  -->
+        <div id="zigzag" class="background-wrap">
+            <h3 class="background-title">Zigzag pattern</h3>
+            <style contenteditable="">
+#zigzag {
+background-image:  linear-gradient(135deg, #444cf7 25%, transparent 25%), linear-gradient(225deg, #444cf7 25%, transparent 25%), linear-gradient(45deg, #444cf7 25%, transparent 25%), linear-gradient(315deg, #444cf7 25%, #e5e5f7 25%);
+background-position:  10px 0, 10px 0, 0 0, 0 0;
+background-size: 20px 20px;
+}
+            </style>
+        </div>
+        <!-- shift + alt + a -->
+
+        <!-- ctrl + k + c  -->
+        <div id="zigzag3d" class="background-wrap">
+            <h3 class="background-title">Zigzag pattern 3D</h3>
+            <style contenteditable="">
+#zigzag3d {
+background: linear-gradient(135deg, #444cf755 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #444cf7 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #444cf755 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #444cf7 25%, #e5e5f7 25%) 0px 0/ 20px 20px;
+}
+            </style>
+        </div>
+        <!-- shift + alt + a -->
+
+        <!-- ctrl + k + c  -->
+        <div id="rhombPattern" class="background-wrap">
+            <h3 class="background-title">Rhomb Pattern</h3>
+            <style contenteditable="">
+#rhombPattern {
+background-image:  linear-gradient(135deg, #444cf7 25%, transparent 25%), linear-gradient(225deg, #444cf7 25%, transparent 25%), linear-gradient(45deg, #444cf7 25%, transparent 25%), linear-gradient(315deg, #444cf7 25%, #e5e5f7 25%);
+background-position:  20px 0, 20px 0, 0 0, 0 0;
+background-size: 20px 20px;
+}
+            </style>
+        </div>
+        <!-- shift + alt + a -->
+
+        <!-- ctrl + k + c  -->
+        <div id="dropRipple" class="background-wrap">
+            <h3 class="background-title">Drop Ripple</h3>
+            <style contenteditable="">
+#dropRipple {
+background-image:  repeating-radial-gradient( circle at 50% 0%, transparent 0, #e5e5f7 23px ), repeating-linear-gradient( #444cf755, #444cf7 );
+}
+            </style>
+        </div>
+        <!-- shift + alt + a -->
+
+
+        <!-- ctrl + k + c  -->
+        <div id="dropRipple2" class="background-wrap">
+            <h3 class="background-title">Drop Ripple 2</h3>
+            <style contenteditable="">
+#dropRipple2 {
+background-image: radial-gradient(circle at center center, #444cf7, #e5e5f7), repeating-radial-gradient(circle at center center, #444cf7, #444cf7, 10px, transparent 20px, transparent 10px);
+background-blend-mode: multiply;
+}
+            </style>
+        </div>
+        <!-- shift + alt + a -->
+
+
+        <!-- ctrl + k + c  -->
+        <div id="quarterCircle" class="background-wrap">
+            <h3 class="background-title">Quarter Circle Pattern</h3>
+            <style contenteditable="">
+#quarterCircle {
+background-image: radial-gradient( circle farthest-corner at 0 0, #444cf7, #444cf7 50%, #e5e5f7 50%);
+background-size: 20px 20px;
+}
+            </style>
+        </div>
+        <!-- shift + alt + a -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+</body>
+</html>

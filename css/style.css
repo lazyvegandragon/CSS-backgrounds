@@ -1,0 +1,115 @@
+/* makes sizing simpler */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* min body height */
+
+body {
+    min-height: 100vh;
+}
+
+.hero {
+    margin: 0;
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    background-color: #2020b3;
+    position: relative;
+}
+
+.hero__text {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    font-size: 9.9vw;
+    margin: 0.1em;
+    height: 9.9vw;
+    line-height: 1;
+    color: white;
+    z-index: 100;
+}
+
+.hero__background-1 {
+    position: absolute;
+    height: 30vw;
+    width: 30vh;
+    justify-self: flex-start;
+    align-self: center;
+    background-image: radial-gradient( circle farthest-corner at center center, #170154, #170154 50%, transparent 50%);
+    background-size: 20px 20px;
+    border-radius: 90% 70% 40% 80%;
+}
+
+
+.hero__background-2 {
+    position: absolute;
+    height: 30vw;
+    width: 30vw;
+    justify-self: center;
+    background-image:  repeating-radial-gradient( circle at center center, transparent 0, #170154 10px ), repeating-linear-gradient( #170154, transparent );
+    border-radius: 0 0 100% 100%;
+    transform: translateY(-50%);
+}
+
+.hero__background-3 {
+    position: absolute;
+    height: 20vw;
+    width: 20vw;
+    justify-self: flex-end;
+    align-self: flex-end; 
+    background-image:  repeating-linear-gradient(45deg, #170154 25%, transparent 25%, transparent 75%, #170154 75%, #170154), repeating-linear-gradient(45deg, #170154 25%, transparent 25%, transparent 75%, #170154 75%, #170154);
+    background-position: 0 0, 10px 10px;
+    background-size: 20px 20px;
+    border-radius: 40% 90% 0 50%;
+}
+
+.main {
+    width: min(1140px, 100% - 4em);
+    margin-inline: auto;
+}
+
+.background-wrap {
+    margin-top: 8em;
+    padding: 3em;
+    border-radius: 8px;
+}
+
+.background-title {
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.background-container {
+    height: 200px;
+    width: 200px;
+
+}
+
+.background-wrap>style {
+    border-radius: 8px;
+    display: block;
+    white-space: pre;
+    background: #333;
+    color: white;
+    font: 12px;
+    padding: 0 15px;
+    margin-top: 1rem;
+    position: relative;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
